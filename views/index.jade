@@ -1,10 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 iata-coder
   form.b-search
     label
       | IATA code:
-      input(name="code", value="LON")
+      input(name="code", value="#{code}")
       input(type="submit")
+
+  div.b-search__result
+    p #{result}
