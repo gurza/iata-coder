@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form.b-search
+    label
+      | IATA code:
+      input(name="code", value="LON")
+      input(type="submit")
